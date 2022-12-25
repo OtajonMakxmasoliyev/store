@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/store/static/css/main.ca6e5525.css",
+    "main.js": "/store/static/js/main.886febbb.js",
+    "static/js/787.ff661d86.chunk.js": "/store/static/js/787.ff661d86.chunk.js",
+    "static/media/kiyim.png": "/store/static/media/kiyim.7be35b1e57ff3df04951.png",
+    "static/media/Poppins-Light.ttf": "/store/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/Poppins-Regular.ttf": "/store/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Bold.ttf": "/store/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/kuylak.png": "/store/static/media/kuylak.1bf1489e4b31aae143e6.png",
+    "static/media/pidjak.png": "/store/static/media/pidjak.ae862f8f7aab3b1be435.png",
+    "static/media/4.png": "/store/static/media/4.53e5ff88a8864e4be36c.png",
+    "static/media/Mada-Regular.ttf": "/store/static/media/Mada-Regular.df69ab7de393664ecc03.ttf",
+    "static/media/Mada-Bold.ttf": "/store/static/media/Mada-Bold.3d60ee18d89bafed756b.ttf",
+    "static/media/2.png": "/store/static/media/2.2ed2f506dd6a2154ac4e.png",
+    "static/media/3.png": "/store/static/media/3.223fc7caa13d0e3ae27d.png",
+    "static/media/logoWhite.svg": "/store/static/media/logoWhite.9e79ad3f9e294d46475f92db9d7f98ea.svg",
+    "static/media/logo.svg": "/store/static/media/logo.10ae15ea38e55285bb1dd6fc20d1de03.svg",
+    "static/media/1.png": "/store/static/media/1.620356062d25cc958d22.png",
+    "index.html": "/store/index.html",
+    "main.ca6e5525.css.map": "/store/static/css/main.ca6e5525.css.map",
+    "main.886febbb.js.map": "/store/static/js/main.886febbb.js.map",
+    "787.ff661d86.chunk.js.map": "/store/static/js/787.ff661d86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca6e5525.css",
+    "static/js/main.886febbb.js"
+  ]
+}
