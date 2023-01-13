@@ -5,6 +5,12 @@
     src: url(./fonts/Mada/Mada-Regular.ttf);
 }
 
+
+@font-face {
+    font-family: "Poppins-l";
+    src: url("./fonts/Poppins/Poppins-Light.ttf");
+}
+
 @mixin main_font() {
     font-family: "Mada";
 }
@@ -79,11 +85,12 @@ body {
 
 
 nav {
-    width: 90%;
+    width: 66.6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    align-self: center;
 
     .logo {
         flex-grow: 3;
@@ -1127,7 +1134,7 @@ footer {
         margin: 0;
     }
 
-  
+
 
     dl,
     .logoDescription,
@@ -1152,13 +1159,13 @@ footer {
 
         color: #F4F4F4;
 
-        p{
+        p {
             margin: 0;
         }
     }
 
     .logoDescription {
-     
+
         gap: 24px;
     }
 
@@ -1177,16 +1184,17 @@ footer {
         color: #FFFFFF;
     }
 
-    .contact{
-        a{
+    .contact {
+        a {
             color: #F4F4F4;
             text-decoration: none;
         }
 
-        .linkIcon{
+        .linkIcon {
             display: flex;
             gap: 16px;
-            a{
+
+            a {
                 padding: 7px;
                 border: 1px solid #F4F4F4;
                 display: flex;
@@ -1196,5 +1204,637 @@ footer {
         }
     }
 
-   
+
+}
+
+.shop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .title {
+        text-align: left;
+        width: 66.6%;
+    }
+
+    nav {
+        width: 66.6%;
+        align-self: center;
+    }
+
+    .showcase {
+
+        height: 240px;
+        display: grid;
+        grid-template-columns: 33% 33%;
+        grid-template-areas:
+            "pagination caro"
+            "title caro";
+        justify-content: center;
+
+
+        .pagination {
+            grid-area: pagination;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+
+            /* White color */
+
+            color: #FFFFFF;
+            text-transform: capitalize;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        .title {
+            grid-area: title;
+            font-family: 'Mada';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 52px;
+
+            /* identical to box height */
+
+
+            /* White color */
+
+            color: #FFFFFF;
+            margin: 0;
+            text-align: left;
+        }
+
+    }
+
+    .alice-carousel {
+        width: 395px;
+
+        grid-area: caro;
+
+        .alice-carousel__next-btn,
+        .alice-carousel__prev-btn {
+            width: 24px;
+            height: 24px;
+            padding: 0;
+            line-height: 18px;
+            background-color: #fff;
+            position: absolute;
+
+        }
+
+        .alice-carousel__prev-btn [data-area]::after {
+            content: url("../images/icon/arrows\ \(2\).svg");
+
+        }
+
+        .alice-carousel__next-btn [data-area]::after {
+
+            content: url("../images/icon/arrows\ \(1\).svg");
+
+        }
+
+        .alice-carousel__prev-btn {
+            left: -30px;
+            top: 30px;
+
+            p {
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                line-height: 24px;
+            }
+
+        }
+
+        .alice-carousel__next-btn {
+            right: -16px;
+            top: 30px;
+
+            p {
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                line-height: 24px;
+            }
+        }
+
+    }
+
+
+}
+
+
+.dropdown {
+    width: 282px;
+    height: auto;
+
+    @include main_font_poppins();
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        button {
+            background: none;
+            border: none;
+            transition: all 0.75s;
+            height: unset;
+        }
+    }
+
+    .down {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow: hidden;
+        transition: all 0.75s;
+        position: relative;
+
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                padding: 4px 10px;
+                @include main_font_poppins();
+                border: 1px solid #111;
+                background-color: #fff;
+                transition: all 0.25s;
+
+                &:active {
+                    background-color: #5463FF;
+                    color: #fff;
+                    @include main_font_pop_b();
+                }
+            }
+        }
+
+        .rangeBar {
+            width: 99%;
+            height: 4px;
+            position: absolute;
+            background-color: #DDDDDD;
+            z-index: -1;
+            top: 7px;
+            border-radius: 10px;
+        }
+
+        .price {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .colors {
+
+            form {
+                display: flex;
+                align-items: center;
+                height: 30px;
+                gap: 8px;
+                padding-left: 10px;
+                box-sizing: border-box;
+
+                input {
+                    display: none;
+                }
+
+                label {
+
+                    div {
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+
+
+                    }
+
+                    .outline {
+                        outline: 2px solid #838181;
+                    }
+                }
+            }
+        }
+
+        .size {
+            display: flex;
+
+            form {
+                display: flex;
+                gap: 37px;
+
+                label {
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    div {
+                        width: 8px;
+                        height: 8px;
+                        background-color: #C4C4C4;
+                        border-radius: 50%;
+                    }
+
+                    .current {
+                        background-color: #5463FF;
+                    }
+                }
+
+                input {
+                    display: none;
+                }
+            }
+        }
+
+    }
+}
+
+
+#price {
+
+    -webkit-appearance: none;
+    background-color: transparent;
+    width: 100%;
+    border-radius: 10px;
+
+
+
+}
+
+
+.main {
+    width: 66.6%;
+    display: flex;
+    gap: 43px;
+
+    .cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-between;
+        gap: 40px;
+    }
+}
+
+.shop .recommended {
+    width: 66.6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+
+    .title {
+        font-family: 'Mada';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        /* identical to box height, or 48px */
+
+        text-align: center;
+
+        color: #000000;
+
+    }
+
+    .alice-carousel {
+        width: 100%;
+        padding: 50px 0;
+
+    }
+
+    .alice-carousel__prev-btn,
+    .alice-carousel__next-btn {
+        border-radius: 50%;
+        top: 150px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(4, 101, 130, 0.5);
+        backdrop-filter: blur(2px);
+
+    }
+
+    .alice-carousel__next-btn {
+        right: -30px;
+    }
+
+
+
+    .storeCard {
+
+        margin: 20px auto;
+        box-shadow: 0px 0 10px #838181;
+
+    }
+}
+
+
+
+
+// shop ended
+
+
+
+.about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    nav {
+        width: 66.6%;
+    }
+
+
+
+    .aboutMarque {
+        margin: 40px;
+        width: 66.6%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+
+        .aboutInfo {
+            width: 48%;
+
+            h2 {
+                text-align: left;
+                @include main_font_mada_b();
+                font-size: 35px;
+            }
+
+            p {
+                margin: 30px 0;
+
+                @include main_font_pop_l();
+                color: #646464;
+                line-height: 30px;
+            }
+        }
+
+        .image {
+            width: 48%;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            .whiteMar {
+                width: 90%;
+                height: 57px;
+                background-color: #fff;
+                position: absolute;
+                bottom: 24px;
+                right: 0;
+                text-align: left;
+                padding: 0 24px;
+                box-sizing: border-box;
+
+                p {
+                    background: linear-gradient(180deg, #7D89FF 0%, #AB40FF 66.67%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    font-family: 'Mada-b';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 57px;
+                    margin: 0;
+                }
+            }
+
+            .left {
+                left: 0;
+                text-align: right;
+            }
+        }
+    }
+}
+
+
+
+.about,
+.contact {
+    .showcase {
+        max-height: 428px;
+        min-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 33%);
+        justify-content: center;
+        position: relative;
+        align-items: center;
+
+        font-family: 'Poppins';
+        color: #fff;
+
+        .left {
+            p {
+                font-family: "Poppins-l";
+                font-weight: 100;
+            }
+        }
+
+        .pagination {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+
+            /* Secondary Color */
+
+            color: #FFFFFF;
+            text-transform: capitalize;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        img {
+            position: relative;
+            z-index: 2;
+            right: 0;
+            justify-self: end;
+        }
+
+        &::after {
+            content: "";
+            height: 0px;
+            width: 0;
+            display: block;
+            border-width: 150px 2000px 0 100px;
+            border-color: transparent #fff transparent transparent;
+            border-style: solid;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+
+
+    }
+}
+
+
+
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .showcase {
+        padding: 1% 0;
+
+        &::after {
+            display: none;
+        }
+    }
+
+
+    .contactCards {
+        width: 66.6%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+
+
+    &_Form {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 24px;
+
+        .title {
+            width: 100%;
+            @include main_font_mada_b();
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 52px;
+            text-align: center;
+        }
+
+        .half {
+            width: 48%;
+        }
+
+        .match {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+
+            button {
+                background: linear-gradient(180deg, #7D89FF 0%, #AB40FF 66.67%);
+                box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.05);
+                padding: 10px 66px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 27px;
+                @include main_font_pop_b();
+                color: #fff;
+                border: none;
+                text-transform: capitalize;
+            }
+        }
+
+
+        input,
+        textarea {
+            padding: 9px 24px;
+            box-sizing: border-box;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            /* identical to box height, or 167% */
+
+
+            /* Medium */
+
+            color: #000000;
+            border: 1px solid #393E46;
+
+
+            &::placeholder {
+                color: #646464;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+        margin-bottom: 50px;
+
+    }
+}
+
+
+
+
+.contactCard {
+    width: 485px;
+    height: 268px;
+
+    /* White color */
+
+    background: #FFFFFF;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .title {
+        @include main_font_mada_b();
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+        margin: 0
+    }
+
+    .info {
+        @include main_font_pop_l();
+        color: #646464;
+        margin: 0;
+    }
+
+    &_icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: #5463FF;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

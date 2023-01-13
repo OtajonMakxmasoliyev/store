@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, createContext, useContext } from 'react'
 import CategoriesStyle from '../components/categoriesStyle'
 import FastOrder from '../components/fastOrder'
 import Footer from '../components/footer'
@@ -7,96 +7,101 @@ import Showcase from '../components/showcase'
 import Logos from '../components/showcaseLogo'
 import StoreCard from '../components/storeCard'
 import Testiominals from '../components/testiominals'
+const storeInfo = [
+  {
+    name: "Smart T-Shirt",
+    price: "40",
+    quality: "Best quality",
+    rating: "5",
+    image: "https://picsum.photos/267/248",
+    type: ["t-shirt", "all"]
+  },
+  {
+    name: "Smart T-Shirt",
+    price: "40",
+    quality: "Best quality",
+    rating: "5",
+    image: "https://picsum.photos/267/248",
+    type: ["t-shirt", "all"]
+  },
+  {
+    name: "Smart T-Shirt",
+    price: "40",
+    quality: "Best quality",
+    rating: "5",
+    image: "https://picsum.photos/267/248",
+    type: ["t-shirt", "all"]
+  },
+  {
+    name: "Smart T-Shirt",
+    price: "40",
+    quality: "Best quality",
+    rating: "5",
+    image: "https://picsum.photos/267/248",
+    type: ["t-shirt", "all"]
+  },
+  {
+    name: "Smart T-Shirt",
+    price: "40",
+    quality: "Best quality",
+    rating: "5",
+    image: "https://picsum.photos/267/248",
+    type: ["t-shirt", "all"]
+  },
+  {
+    name: "Smart T-Shirt",
+    price: "40",
+    quality: "Best quality",
+    rating: "5",
+    image: "https://picsum.photos/267/248",
+    type: ["t-shirt", "all"]
+  },
+  {
+    name: "Smart T-Shirt",
+    price: "40",
+    quality: "Best quality",
+    rating: "5",
+    image: "https://picsum.photos/267/248",
+    type: ["t-shirt", "all"]
+  },
+  {
+    name: "Smart T-Shirt",
+    price: "40",
+    quality: "Best quality",
+    rating: "5",
+    image: "https://picsum.photos/267/248",
+    type: ["t-shirt", "all"]
+  },
+  {
+    name: "Smart T-Shirt",
+    price: "40",
+    quality: "Best quality",
+    rating: "5",
+    image: "https://picsum.photos/267/248",
+    type: ["t-shirt", "all"]
+  },
+  {
+    name: "Smart T-Shirt",
+    price: "40",
+    quality: "Best quality",
+    rating: "5",
+    image: "https://picsum.photos/267/248",
+    type: ["t-shirt", "all"]
+  }
+
+
+]
+
+
 
 const Home = () => {
   const [stock, setStock] = useState("all")
   const [id, setId] = useState(0)
 
-  const storeInfo = [
-    {
-      name: "Smart T-Shirt",
-      price: "40",
-      quality: "Best quality",
-      rating: "5",
-      image: "https://picsum.photos/267/248",
-      type: ["t-shirt", "all"]
-    },
-    {
-      name: "Smart T-Shirt",
-      price: "40",
-      quality: "Best quality",
-      rating: "5",
-      image: "https://picsum.photos/267/248",
-      type: ["t-shirt", "all"]
-    },
-    {
-      name: "Smart T-Shirt",
-      price: "40",
-      quality: "Best quality",
-      rating: "5",
-      image: "https://picsum.photos/267/248",
-      type: ["t-shirt", "all"]
-    },
-    {
-      name: "Smart T-Shirt",
-      price: "40",
-      quality: "Best quality",
-      rating: "5",
-      image: "https://picsum.photos/267/248",
-      type: ["t-shirt", "all"]
-    },
-    {
-      name: "Smart T-Shirt",
-      price: "40",
-      quality: "Best quality",
-      rating: "5",
-      image: "https://picsum.photos/267/248",
-      type: ["t-shirt", "all"]
-    },
-    {
-      name: "Smart T-Shirt",
-      price: "40",
-      quality: "Best quality",
-      rating: "5",
-      image: "https://picsum.photos/267/248",
-      type: ["t-shirt", "all"]
-    },
-    {
-      name: "Smart T-Shirt",
-      price: "40",
-      quality: "Best quality",
-      rating: "5",
-      image: "https://picsum.photos/267/248",
-      type: ["t-shirt", "all"]
-    },
-    {
-      name: "Smart T-Shirt",
-      price: "40",
-      quality: "Best quality",
-      rating: "5",
-      image: "https://picsum.photos/267/248",
-      type: ["t-shirt", "all"]
-    },
-    {
-      name: "Smart T-Shirt",
-      price: "40",
-      quality: "Best quality",
-      rating: "5",
-      image: "https://picsum.photos/267/248",
-      type: ["t-shirt", "all"]
-    },
-    {
-      name: "Smart T-Shirt",
-      price: "40",
-      quality: "Best quality",
-      rating: "5",
-      image: "https://picsum.photos/267/248",
-      type: ["t-shirt", "all"]
-    }
+  
 
 
-  ]
-
+  
 
 
   const ordersInfo = []
@@ -117,7 +122,7 @@ const Home = () => {
 
   }
   console.log(ordersInfo);
-
+  const ordersContext  = React.createContext(ordersInfo)
   const testiominalsInfo = [
     {
       name: "Friskidia",
@@ -186,4 +191,6 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;
+
+export {storeInfo}

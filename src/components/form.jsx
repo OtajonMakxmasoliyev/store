@@ -3,7 +3,7 @@ import { Navigate } from "react-router-dom";
 
 class Form extends React.Component  {
 
-    state = { user: null, password: null };
+    state = { user: "", password: "" };
 
     async handleSubmit(event) {
         event.preventDefault();
