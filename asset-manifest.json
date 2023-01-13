@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/store/static/css/main.ca6e5525.css",
-    "main.js": "/store/static/js/main.7455cee1.js",
-    "static/js/787.ff661d86.chunk.js": "/store/static/js/787.ff661d86.chunk.js",
+    "main.css": "/store/static/css/main.2db34163.css",
+    "main.js": "/store/static/js/main.e481ada3.js",
+    "static/js/787.884e199e.chunk.js": "/store/static/js/787.884e199e.chunk.js",
+    "static/media/aboutShow.png": "/store/static/media/aboutShow.0f03ff1cee3976279e1a.png",
     "static/media/kiyim.png": "/store/static/media/kiyim.7be35b1e57ff3df04951.png",
+    "static/media/aboutMangcoding.png": "/store/static/media/aboutMangcoding.a6d4ee43eb1b5fd115f3.png",
     "static/media/Poppins-Light.ttf": "/store/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
     "static/media/Poppins-Regular.ttf": "/store/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-Bold.ttf": "/store/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
@@ -17,13 +19,18 @@
     "static/media/logoWhite.svg": "/store/static/media/logoWhite.9e79ad3f9e294d46475f92db9d7f98ea.svg",
     "static/media/logo.svg": "/store/static/media/logo.10ae15ea38e55285bb1dd6fc20d1de03.svg",
     "static/media/1.png": "/store/static/media/1.620356062d25cc958d22.png",
+    "static/media/carousel (4).png": "/store/static/media/carousel (4).ed956c88b48a2730912b.png",
+    "static/media/carousel (3).png": "/store/static/media/carousel (3).06151608e7343d5dfaf1.png",
+    "static/media/carousel (1).png": "/store/static/media/carousel (1).a5fe931d7abf326b32b9.png",
     "index.html": "/store/index.html",
-    "main.ca6e5525.css.map": "/store/static/css/main.ca6e5525.css.map",
-    "main.7455cee1.js.map": "/store/static/js/main.7455cee1.js.map",
-    "787.ff661d86.chunk.js.map": "/store/static/js/787.ff661d86.chunk.js.map"
+    "static/media/arrows (1).svg": "/store/static/media/arrows (1).750660d4839c004aa160.svg",
+    "static/media/arrows (2).svg": "/store/static/media/arrows (2).da01ef2ae0f03b8817b5.svg",
+    "main.2db34163.css.map": "/store/static/css/main.2db34163.css.map",
+    "main.e481ada3.js.map": "/store/static/js/main.e481ada3.js.map",
+    "787.884e199e.chunk.js.map": "/store/static/js/787.884e199e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca6e5525.css",
-    "static/js/main.7455cee1.js"
+    "static/css/main.2db34163.css",
+    "static/js/main.e481ada3.js"
   ]
 }
