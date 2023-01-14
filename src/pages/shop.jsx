@@ -58,7 +58,7 @@ const Shop = () => {
             margin:24
         },
         1024: {
-            items: 4,
+            items: 3,
             itemsFit: 'contain'
         },
     };

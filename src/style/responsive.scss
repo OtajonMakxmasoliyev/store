@@ -1,0 +1,177 @@
+@media only screen and (max-width:1400px) {
+    nav {
+        width: 90%;
+    }
+
+    .testimionals {
+        width: 90%;
+    }
+
+    .look {
+
+        grid-template-columns: 45% 45%;
+
+    }
+
+    // home page ended
+    .shop .showcase {
+        grid-template-columns: 40% 40%;
+    }
+
+    .shop .title {
+        width: 90%;
+    }
+
+    .main {
+        width: 90%;
+    }
+
+    .shop .recommended {
+        width: 90%;
+    }
+
+
+    // shop ended
+    .about .showcase,
+    .contact .showcase {
+        grid-template-columns: 45% 45%;
+    }
+
+    .about .aboutMarque {
+        width: 90%;
+    }
+
+    // about ended 
+    .contact {
+        .contactCards {
+            width: 90%;
+        }
+    }
+
+
+    footer {
+        padding: 0 5%;
+    }
+
+
+
+}
+
+
+
+@media only screen and (max-width:1090px) {
+
+
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        position: relative;
+
+        display: grid;
+        grid-template-areas:
+            "logo logo"
+            "links links";
+
+        .logo {
+            grid-area: logo;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    nav .navigationAccount .search input {
+        width: 150px;
+    }
+
+
+
+
+
+    nav .navigationAccount {
+        grid-area: links;
+        width: 100%;
+
+        ul {
+            display: flex;
+        }
+    }
+
+    //     grid-area: links;
+    //     height: 100vh;
+    //     position: fixed;
+    //     right: -100%;
+    //     flex-direction: column;
+    //     transition: 0.75s all;
+    //     width: 250px;
+
+    //     bottom:0;
+    //     z-index: 3;
+    //     background-color: aliceblue;
+    //     align-items: center;
+
+
+
+
+    // }
+
+    // nav ul{
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+
+    // .toogle{
+    //     display: block;
+    // }
+
+
+
+
+
+    // nav .close{
+    //     display: block;
+    // }
+}
+
+
+@media only screen and (max-width:1090px) {
+    nav {
+
+        grid-template-areas: "logo toogle";
+
+        .navigationAccount {
+                grid-area: links;
+                height: 100vh;
+                position: fixed;
+                right: -100%;
+                flex-direction: column;
+                transition: 0.75s all;
+                width: 250px;
+
+                bottom:0;
+                z-index: 3;
+                background-color: aliceblue;
+                align-items: center;
+        }
+        ul{
+                display: flex;
+                flex-direction: column;
+            }
+
+        .show {
+            right: 0;
+        }
+
+        .close {
+            display: block;
+        }
+          .toogle{
+        display: block;
+    }
+    }
+
+}

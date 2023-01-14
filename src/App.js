@@ -7,6 +7,9 @@ import Contact from "./pages/contact";
 import Home from "./pages/home";
 import Shop from "./pages/shop"
 import "./style/style.scss"
+import "./style/responsive.scss"
+
+
 
 class App extends React.Component {
 
